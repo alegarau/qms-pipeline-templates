@@ -27,6 +27,7 @@ stages:
           - checkout: ${{parameters.template_repo}}
         
           - script: |
+              echo "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
               cd $(Build.Repository.Name)
               SCRIPT_PATH=${{variables.script_location}}/manual_pv.sh
               chmod +x $SCRIPT_PATH
